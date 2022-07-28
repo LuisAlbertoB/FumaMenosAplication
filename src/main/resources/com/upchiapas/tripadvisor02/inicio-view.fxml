@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" styleClass="backgroundColor" stylesheets="@degradadochill.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor02.controllers.InicioController">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="300.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets.img/dibujo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelLaMotivacion" layoutX="57.0" layoutY="303.0" prefHeight="30.0" prefWidth="214.0" text="La motivacion comienza el cambio" textFill="#df6b36">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnComenzar" layoutX="95.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#btnComenzarOnMouseClicked" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: #f28d00;" text="COMENZAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSalirFuma" layoutX="119.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#btnSalirFumaOnMouseClicked" prefHeight="18.0" prefWidth="90.0" style="-fx-background-color: #f28d00;" text="Salir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

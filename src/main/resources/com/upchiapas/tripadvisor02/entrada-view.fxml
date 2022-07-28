@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.tripadvisor02.controllers.EntradaController">
+   <children>
+      <Label fx:id="nombreCompleto" layoutX="13.0" layoutY="86.0" prefHeight="18.0" prefWidth="117.0" text="Nombre completo:" />
+      <TextField fx:id="mytxtname" layoutX="16.0" layoutY="104.0" prefHeight="26.0" prefWidth="267.0" />
+      <Label fx:id="fechaDeNacimiento" layoutX="14.0" layoutY="156.0" prefHeight="18.0" prefWidth="118.0" text="Fecha de nacimiento:" />
+      <DatePicker fx:id="mydatenacimiento" layoutX="134.0" layoutY="152.0" prefHeight="26.0" prefWidth="142.0" />
+      <Label fx:id="sexolabel" layoutX="15.0" layoutY="204.0" prefHeight="18.0" prefWidth="41.0" text="Sexo:" />
+      <RadioButton fx:id="radioMasculino" layoutX="72.0" layoutY="204.0" mnemonicParsing="false" selected="true" text="Masculino">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioFemenino" layoutX="187.0" layoutY="204.0" mnemonicParsing="false" text="Femenino" toggleGroup="$sexo" />
+      <Label fx:id="labelNacionalidad" layoutX="13.0" layoutY="261.0" text="Nacionalidad:" />
+      <ChoiceBox fx:id="myNacionalidad" layoutX="94.0" layoutY="257.0" prefWidth="150.0" style="-fx-background-color: #f28d00;" />
+      <Label fx:id="labelTiempoComoFumador" layoutX="9.0" layoutY="317.0" text="Tiempo como fumador:" />
+      <TextField fx:id="mytxtMesesDeFumador" layoutX="138.0" layoutY="312.0" prefHeight="26.0" prefWidth="76.0" />
+      <Label fx:id="labelMeses" layoutX="214.0" layoutY="317.0" text="Meses." />
+      <Label fx:id="labelCuantosCigarrosConsume" layoutX="9.0" layoutY="365.0" text="¿Cuantos cigarros consume al dia?" />
+      <TextField fx:id="mytxtCantidadCigarros" layoutX="194.0" layoutY="360.0" prefHeight="26.0" prefWidth="76.0" />
+      <ImageView fitHeight="138.0" fitWidth="99.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets.img/dibujo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSiguiente" layoutX="107.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#btnSiguienteOnMouseClicked" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #f28d00;" text="Siguiente" />
+      <ImageView fitHeight="26.0" fitWidth="50.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets.img/atras.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAtras" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#btnAtrasOnMouseClicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" />
+   </children>
+</AnchorPane>
